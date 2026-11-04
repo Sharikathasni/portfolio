@@ -1,326 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website | Sarika Thasni</title>
-    <!-- Linking CSS File -->
-    <link rel="stylesheet" href="css/pstyle.css" />
-    <!-- Fontawesome link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Bootstrap link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-  </head>
-  <body>
-    <!-- Header & Navbar -->
-    <header class="bg-dark fixed-top">
-      <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-3" href="#">SARIKA THASNI</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#skills">SKILLS</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#about">ABOUT</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="#cv">CURRICULUM VITAE</a>
-              </li>
-          </div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <meta name="description" content="Sarika Thasni — Dubai-based Front-End and WordPress Developer with experience in responsive websites, Google Ads, and SEO coordination." />
+  <title>Sarika Thasni — Web Developer & Digital Marketer</title>
 
-    <!-- Hero or Showcase Section -->
-    <section class="hero d-flex flex-column align-items-center justify-content-center">
-      <div class="text-center">
-        <h1 class="h1 text-white fw-medium fst-italic">SARIKA THASNI</h1>
-        <h2 class="display-3 text-white fw-bold">Graduated In B.tech Information Technology <br /> in 2022</h2>
-        <a href="#skills" class="btn btn-lg fs-6 fw-medium mt-5 btn-primary p-3">TELL ME MORE</a>
-      </div>
-    </section>
-    
-    <!-- Skills Section -->
-    <section class="container py-5" id="skills">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2>SKILLS</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">Continuously improving my skills and knowledge in the field.</h5>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-between mx-0">
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-cart-shopping"></i>
-          <h3 class="mt-4 h4">Front-end & Web Development</h3>
-          <p class="text-center">Proficient in HTML, CSS, and JavaScript. Experienced in responsive web design, building user-friendly interfaces, and using modern frameworks like ReactJS.</p>
-        </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-laptop"></i>
-          <h3 class="mt-4 h4">Python Django Development</h3>
-          <p class="text-center">Development using the python django framework which allows rapid encouragement,clean and pragmatic design</p>
-        </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white p-4" style="width: 25rem">
-          <i class="text-white bg-primary d-flex align-items-center justify-content-center fs-2 rounded-circle fa-solid fa-mobile-screen-button"></i>
-          <h3 class="mt-4 h4">Wordpress Development</h3>
-          <p class="text-center">Proficient in  wordpress development and familiar with the wordpress plugins and themes  </p>
-        </div>
-      </div>
-    </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
 
-    <!-- Portfolio Section -->
-    <section class="container py-5" id="portfolio">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center justify-content-center">
-          <h2>PORTFOLIO</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">A collection of projects I've worked on.</h5>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Sarika Thasni home">SARIKA THASNI <span></span></a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">What I do</a>
+      <a href="#work">Selected work</a>
+      <a href="#skills">Skills</a>
+      <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section-wrap">
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          WEB DEVELOPMENT · DIGITAL MARKETING
+        </p>
+
+        <h1>Thoughtful digital<br />work, <em>made to matter.</em></h1>
+
+        <p class="hero-intro">
+          I'm Sarika Thasni, a Front-End & WordPress Developer with experience in digital marketing.
+          I build responsive, user-friendly websites and support business growth through Google Ads,
+          keyword research, and SEO coordination.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">
+            Explore my work <span>↘</span>
+          </a>
+
+          <a class="button button-outline" href="Sarika-Thasni-CV.pdf" download>
+            Download CV <span>↓</span>
+          </a>
         </div>
-        <div class="row mt-5 mx-0 justify-content-center align-items-center">
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/sotc.JPG" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">SOTC Travel Company </h6>
-                <p class="card-text text-secondary">Wordpress/PHP</p>
-                <a href="https://www.sotc.in/">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/landcruiser.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">LandCruiser Heaven</h6>
-                <p class="card-text text-secondary">Wordpress/Elementor</p>
-                <a href="https://landcruiserheaven.com/">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 col-12 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/thomascook.JPG" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Thomascook Travel and Tours</h6>
-                <p class="card-text text-secondary">Wordpress/PHP</p>
-                <a href="https://www.thomascook.in/">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/res.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Responsive Landing Page</h6>
-                <p class="card-text text-secondary">HTML/CSS/Bootstrap</p>
-                 <a href="https://webdesign-sarika.netlify.app/#">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/todo.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Login Page</h6>
-                <p class="card-text text-secondary">React Js</p>
-                 <a href="https://sharikathasni.github.io/login/#/Login">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-           <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/levis.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Levis Red Tab Events</h6>
-                <p class="card-text text-secondary">Wordpress/Elementor</p>
-                 <a href="https://levisredtabevents.com/home/">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-           <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/appao.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">MobileApp Website</h6>
-                <p class="card-text text-secondary">Wordpress</p>
-                 <a href="https://appao.nl/home/">Have a look!!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 px-md-3 px-0 col-md-4 card-wrapper">
-            <div class="card mt-4">
-              <img src="images/travel.png" class="img-fluid" alt="portfolio-img">
-              <div class="card-body text-center">
-                <h6 class="card-title">Adventure Website</h6>
-                <p class="card-text text-secondary">HTML/CSS</p>
-                 <a href="https://adveweb.netlify.app/">Have a look!!</a>
-              </div>
-            </div>
-          </div>
+
+        <div class="hero-meta">
+          <span>AL QUSAIS, DUBAI, UAE</span>
+          <span class="meta-line"></span>
+          <span>WORKING WITH BRANDS EVERYWHERE</span>
         </div>
-      </div>      
+      </div>
+
+      <div class="hero-art hero-photo-wrap reveal">
+        <div class="portrait-frame">
+          <img src="sharika-photo.PNG" alt="Professional portrait of Sarika Thasni" class="portrait-photo" />
+        </div>
+
+        <div class="portrait-caption">
+          <span class="status-dot"></span>
+          WEB DEVELOPER & DIGITAL MARKETER
+        </div>
+
+        <div class="portrait-accent" aria-hidden="true">ST.</div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span class="scroll-line"></span>
+        SCROLL TO EXPLORE
+      </a>
     </section>
 
-    <!-- About Section -->
-    <section class="container py-5" id="about">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
-          <h2>ABOUT</h2>
-          <h5 class="text-secondary fw-normal py-2 fst-italic">Learn more about me, my background, and what motivates me.</h5>
-        </div>
+   <!-- ABOUT SECTION -->
+<section class="intro-band" id="about">
+  <div class="section-wrap intro-grid">
+
+    <!-- LEFT SIDE: ABOUT CONTENT -->
+    <div class="intro-content reveal">
+
+      <p class="section-kicker">01 / A LITTLE ABOUT ME</p>
+
+      <h2>
+        I work at the intersection of
+        <em>websites, visibility,</em> and growth.
+      </h2>
+
+      <p>
+        I enjoy turning ideas into useful digital experiences — from building responsive
+        websites and refining user journeys to setting up Google Ads campaigns and reviewing
+        SEO performance. My approach is collaborative, detail-focused, and always grounded
+        in the goal behind the work.
+      </p>
+
+      <a class="underlined-link" href="#contact">
+        A little more about working together <span>↗</span>
+      </a>
+
+    </div>
+
+    <!-- RIGHT SIDE: THREE HIGHLIGHT BOXES -->
+    <div class="about-highlights reveal">
+
+      <div class="about-highlight">
+        <span>01</span>
+        <strong>Build</strong>
+        <small>Responsive websites &amp; digital experiences</small>
       </div>
-      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-          <h5>2016-2018</h5>
-          <h5>Early Passion for Technology</h5>
-          <p>From an early age, I became fascinated with computers and programming. Starting with basic HTML and CSS, I gradually tried to expand my skills.</p>
-        </div>
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/t.jpg" alt="img">
-        </div>
+
+      <div class="about-highlight">
+        <span>02</span>
+        <strong>Grow</strong>
+        <small>Google Ads, keyword research &amp; SEO support</small>
       </div>
-      <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/h.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-          <h5>2018-2022</h5>
-          <h5>Higher Education and Career Growth</h5>
-          <p>During my university years, I studied B.tech in Information Technology and gained hands-on experience through internships and sylabuss. This period fueled my passion for creating innovative solutions and solving complex problems.</p>
-        </div>
+
+      <div class="about-highlight">
+        <span>03</span>
+        <strong>Improve</strong>
+        <small>Thoughtful details, analysis &amp; optimisation</small>
       </div>
-      <div class="row flex-row-reverse flex-md-row mt-5 pt-5">
-        <div class="col-9 col-md-5 text-md-end">
-          <h5>2023 Present</h5>
-          <h5>Professional Excellence and Continuous Learning</h5>
-          <p>After My Graduation I started to work as wordpress developer and Front-end developer and gained so many information.Now still Continuingmy studies to be updated with the latest technologies.</p>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services section-wrap" id="services">
+
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker">02 / WHAT I DO</p>
+          <h2>Creative thinking.<br /><em>Practical execution.</em></h2>
         </div>
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/p.jpg" alt="img">
-        </div>
+
+        <p class="heading-note">
+          A mix of technical implementation and marketing know-how, built around what each business needs.
+        </p>
       </div>
-      <div class="row justify-content-md-end mt-5 pt-5">
-        <div class="col-3 col-md-2 img text-center">
-          <img class="rounded-circle border border-5 border-dark-subtle img-fluid" src="images/f1.jpg" alt="img">
-        </div>
-        <div class="col-9 col-md-5">
-          <h5>Future</h5>
-          <h5>Continuing to Make a Difference</h5>
-          <p>I am committed to leveraging my skills and expertise to contribute to meaningful projects that have a positive impact on society. I am eager to take on new challenges and collaborate with talented individuals to create innovative solutions.</p>
-        </div>
-      </div>     
+
+      <div class="service-list">
+
+        <article class="service-row reveal">
+          <span class="service-number">01</span>
+
+          <div>
+            <h3>Website Design & Development</h3>
+            <p>
+              Responsive websites, thoughtful layouts, landing pages, and practical updates
+              that make websites easier to use and manage.
+            </p>
+
+            <div class="chips">
+              <span>HTML / CSS / JS</span>
+              <span>WordPress</span>
+              <span>Elementor</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-row reveal">
+          <span class="service-number">02</span>
+
+          <div>
+            <h3>Google Ads & Performance</h3>
+            <p>
+              Campaign setup, keyword research, search-term reviews, and ongoing optimisation
+              to improve relevance and campaign performance.
+            </p>
+
+            <div class="chips">
+              <span>Campaign Setup</span>
+              <span>Keyword Research</span>
+              <span>Optimisation</span>
+              <span>Reporting</span>
+            </div>
+          </div>
+
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-row reveal">
+          <span class="service-number">03</span>
+
+          <div>
+            <h3>SEO Coordination & Analysis</h3>
+            <p>
+              Reviewing SEO reports, identifying opportunities, and following up on
+              on-page improvements with the SEO team.
+            </p>
+
+            <div class="chips">
+              <span>SEO Reports</span>
+              <span>On-page SEO</span>
+              <span>Content Checks</span>
+              <span>Performance Review</span>
+            </div>
+          </div>
+
+          <span class="service-arrow">↗</span>
+        </article>
+
+        <article class="service-row reveal">
+          <span class="service-number">04</span>
+
+          <div>
+            <h3>Digital Tools & Lead Support</h3>
+            <p>
+              Helping businesses connect with customers through WhatsApp tools,
+              QR code creation, and practical digital workflows.
+            </p>
+
+            <div class="chips">
+              <span>WhatsApp Tools</span>
+              <span>QR Codes</span>
+              <span>Lead Journeys</span>
+            </div>
+          </div>
+
+          <span class="service-arrow">↗</span>
+        </article>
+
+      </div>
     </section>
 
-    <!-- Curriculum Vitae Section -->
-    <section class="container py-5" id="cv">
-      <div class="row mt-4 py-3">
-        <div class="col-12 d-flex flex-column text-center">
-          <h2>CURRICULUM VITAE</h2>
+    <!-- PROJECTS SECTION -->
+    <section class="work-section" id="work">
+      <div class="section-wrap">
+
+        <div class="section-heading work-heading reveal">
+          <div>
+            <p class="section-kicker">03 / SELECTED WORK</p>
+            <h2>Made for the <em>real world.</em></h2>
+          </div>
+
+          <p class="heading-note">
+            A selection of websites I've worked on. Explore the live projects
+            to see each brand's digital experience.
+          </p>
+        </div>
+
+        <!-- PROJECT GRID - NO FILTER NAVIGATION -->
+        <div class="project-grid">
+
+          <!-- 01 BROS MASTERMIND -->
+          <article class="project-card project-large reveal" data-category="web business">
+            <a class="project-visual visual-olive"
+               href="https://brosmastermind.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Bros Mastermind website">
+
+              <img src="brosmastermind-preview.png"
+                   alt="Live website preview of Bros Mastermind"
+                   loading="lazy" />
+
+              <span class="visual-label">01 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Bros Mastermind</h3>
+                <p>Website design & development</p>
+              </div>
+              <span class="project-type">Business</span>
+            </div>
+          </article>
+
+          <!-- 02 ETERNEL CLINIC -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-blush"
+               href="https://eternelclinic.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Eternel Clinic website">
+
+              <img src="eternelclinic-preview.png"
+                   alt="Live website preview of Eternel Clinic"
+                   loading="lazy" />
+
+              <span class="visual-label">02 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Eternel Clinic</h3>
+                <p>Clinic website</p>
+              </div>
+              <span class="project-type">Healthcare</span>
+            </div>
+          </article>
+
+          <!-- 03 MIDA -->
+          <article class="project-card reveal" data-category="commerce web">
+            <a class="project-visual visual-sand"
+               href="https://mida.ae/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Mida website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fmida.ae%2F?w=1200&h=800"
+                   alt="Live website preview of Mida"
+                   loading="lazy" />
+
+              <span class="visual-label">03 / E-COMMERCE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Mida</h3>
+                <p>E-commerce website</p>
+              </div>
+              <span class="project-type">E-commerce</span>
+            </div>
+          </article>
+
+          <!-- 04 JAM SPORTS ACADEMY -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-blue"
+               href="https://jamsportsacademy.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit JAM Sports Academy website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjamsportsacademy.com%2F?w=1200&h=800"
+                   alt="Live website preview of JAM Sports Academy"
+                   loading="lazy" />
+
+              <span class="visual-label">04 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>JAM Sports Academy</h3>
+                <p>Sports academy website</p>
+              </div>
+              <span class="project-type">Sports</span>
+            </div>
+          </article>
+
+          <!-- 05 NEXACORE GROUP -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-charcoal"
+               href="https://nexacoregroup.ae/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Nexacore Group website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fnexacoregroup.ae%2F?w=1200&h=800"
+                   alt="Live website preview of Nexacore Group"
+                   loading="lazy" />
+
+              <span class="visual-label">05 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Nexacore Group</h3>
+                <p>Corporate website</p>
+              </div>
+              <span class="project-type">Corporate</span>
+            </div>
+          </article>
+
+          <!-- 06 BEAUTY LOFT SALON -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-lilac"
+               href="https://beautyloftsalon.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Beauty Loft Salon website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fbeautyloftsalon.com%2F?w=1200&h=800"
+                   alt="Live website preview of Beauty Loft Salon"
+                   loading="lazy" />
+
+              <span class="visual-label">06 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Beauty Loft Salon</h3>
+                <p>Salon website</p>
+              </div>
+              <span class="project-type">Beauty</span>
+            </div>
+          </article>
+
+          <!-- 07 PRIMENEST PROPERTIES -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-cream"
+               href="https://primenestproperties.ae/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit PrimeNest Properties website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fprimenestproperties.ae%2F?w=1200&h=800"
+                   alt="Live website preview of PrimeNest Properties"
+                   loading="lazy" />
+
+              <span class="visual-label">07 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>PrimeNest Properties</h3>
+                <p>Property website & listings</p>
+              </div>
+              <span class="project-type">Real estate</span>
+            </div>
+          </article>
+
+          <!-- 08 VERALI LANDSCAPE -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-green"
+               href="https://veralislandscape.ae/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Verali Landscape website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fveralislandscape.ae%2F?w=1200&h=800"
+                   alt="Live website preview of Verali Landscape"
+                   loading="lazy" />
+
+              <span class="visual-label">08 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Verali Landscape</h3>
+                <p>Landscape website</p>
+              </div>
+              <span class="project-type">Landscape</span>
+            </div>
+          </article>
+
+          <!-- 09 SWIFT DAY SURGERY -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual visual-coral"
+               href="https://swiftdaysurgery.ae/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Swift Day Surgery website">
+
+              <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fswiftdaysurgery.ae%2F?w=1200&h=800"
+                   alt="Live website preview of Swift Day Surgery"
+                   loading="lazy" />
+
+              <span class="visual-label">09 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Swift Day Surgery</h3>
+                <p>Healthcare website</p>
+              </div>
+              <span class="project-type">Healthcare</span>
+            </div>
+          </article>
+
+          <!-- 10 CASA AMRAK -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual project-photo"
+               href="https://casaamrak.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Casa Amrak website">
+
+              <img src="casaamrak-preview.png"
+                   alt="Casa Amrak website preview"
+                   loading="lazy" />
+
+              <span class="visual-label">10 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Casa Amrak</h3>
+                <p>Yacht management & experiences website</p>
+              </div>
+              <span class="project-type">Hospitality</span>
+            </div>
+          </article>
+
+          <!-- 11 CHEESE ON TOP -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual project-photo"
+               href="https://www.cheeseontop.net/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Cheese On Top website">
+
+             <img src="cheeseontop.png"
+                   alt="Live website preview of Bros Mastermind"
+                   loading="lazy" />
+
+              <span class="visual-label">11 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>Cheese On Top</h3>
+                <p>Restaurant website</p>
+              </div>
+              <span class="project-type">Food & Beverage</span>
+            </div>
+          </article>
+
+          <!-- 12 THE RED HOLDING -->
+          <article class="project-card reveal" data-category="web business">
+            <a class="project-visual project-photo"
+               href="https://www.theredholding.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit The Red Holding website">
+
+                   <img src="redholding.png"
+                   alt="Live website preview of Bros Mastermind"
+                   loading="lazy" />
+
+              <span class="visual-label">12 / WEBSITE</span>
+              <span class="visual-open">↗</span>
+            </a>
+
+            <div class="project-info">
+              <div>
+                <h3>The Red Holding</h3>
+                <p>Corporate group website</p>
+              </div>
+              <span class="project-type">Corporate</span>
+            </div>
+          </article>
+
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 mt-5 order-lg-0 order-1 text-center">
-          <img class="img-fluid rounded-circle border border-5 border-dark-subtle" src="images/sharika.jpeg" alt="profile-img">
-          <h2 class="mt-3">SARIKA THASNI</h2>
-          <ul class="list-unstyled contact-info">
-            <li><i class="fas fa-envelope me-2"></i> sharikarasheed114@gmail.com</li>
-            <li><i class="fas fa-phone me-2"></i> +971547965234</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i> Al Qusais,Dubai</li>
-          </ul>
-          <h5>Technical Skills</h5>
-          <ul class="list-unstyled">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python Django</li>
-            <li>Wordpress Development</li>
-            <li>Code Debugging</li>
-            <li>C++</li>
-            <li>PHP Laravel</li>
-            <li>React Js</li>
-          </ul>
-          <h5>Languages</h5>
-          <ul class="list-unstyled">
-            <li>English</li>
-            <li>Hindi</li>
-            <li>Malayalam</li>
-            
-          </ul>
-        </div>
-        <div class="col-lg-7 order-lg-1 order-0 mt-5 text-start">
-          <h3>Profile</h3>
-          <hr>
-          <p>Detailed web developer with advanced coding abilites and enthusiasm for new enhancement,expert in building high performing,scalable structures to meet client requirements.Passionate about turning designfiles into responsive accessible and editable pages.</p>
-            
-          </ul>
-          <h3>Education</h3>
-          <hr>
-          <dl>
-            <dt>2018-2022</dt>
-            <dd>APJ Abdul Kalam Technological University</dd>
-            <dd>B.tech in Information Technology</dd>
-          </dl>
-          <hr>
-          <dl>
-            <dt>2016-2018</dt>
-            <dd>Kerala Board Of Higher Education</dd>
-            <dd>Higher Secondary</dd>
-          </dl>
-          <hr>
-          <dl>
-            <dt>2016</dt>
-            <dd>Central Board Of Secondary Education</dd>
-            <dd>Secondary School</dd>
-          </dl>
-          <h3>Additional Courses & Training</h3>
-          <hr>
-          <dl>
-            <dd>Python Django</dd>
-            <dd>Inmakes Infotech,Kochi</dd>
-          </dl>
-          <hr>
-          <dl>
-            <dd>Full Stack Development</dd>
-            <dd>Avodha,Kochi</dd>
-          </dl>
-          <h3>Work Experience</h3>
-          <hr>
-            <dl>
-            <dt>February 2024- May2024</dt>
-            <dd>Web Developer</dd>
-            <dd>Tiqs Me  LLC,Al Nahda 2,Dubai UAE</dd>
-           
-          </dl>
-           <dl>
-            <dt>October 2023-January 2024</dt>
-            <dd>Web Developer Intern</dd>
-            <dd>Slipstream Marketing Management LLC,Ibn Battuta,Dubai UAE</dd>
-           
-          </dl>
-          <dl>
-            <dt>July 2022-June 2023</dt>
-            <dd>Wordpress developer/ Front-end developer</dd>
-            <dd>Forte Logic PVT Ltd, India Kerala</dd>
-           
-          </dl>
-        </div>
-      </div>      
     </section>
-     <!-- Footer -->
-     <footer>
-      <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-center justify-content-md-between">
-        <p>Copyright © 2023 Sarika Thasni</p>
-       
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section section-wrap" id="skills">
+
+      <div class="skills-intro reveal">
+        <p class="section-kicker">04 / MY TOOLKIT</p>
+
+        <h2>The right tools<br />for the <em>right reasons.</em></h2>
+
+        <p>
+          I keep the process practical: choose the tools that fit the brief,
+          build with care, and keep improving from what the data and users tell us.
+        </p>
       </div>
-     </footer>
-    
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+
+      <div class="skill-groups reveal">
+
+        <div class="skill-group">
+          <span>01</span>
+          <div>
+            <h3>Web & Content</h3>
+            <p>HTML5 · CSS3 · JavaScript · WordPress · Elementor · Responsive layouts</p>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span>02</span>
+          <div>
+            <h3>Paid Marketing</h3>
+            <p>Google Ads · Keyword research · Campaign setup · Search term analysis · Optimisation</p>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span>03</span>
+          <div>
+            <h3>SEO & Analytics</h3>
+            <p>SEO report analysis · On-page SEO coordination · Performance reviews · Website checks</p>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span>04</span>
+          <div>
+            <h3>Digital Support</h3>
+            <p>QR code generation · WhatsApp tools · Lead generation workflows · Website maintenance</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- APPROACH SECTION -->
+    <section class="approach-section">
+      <div class="section-wrap approach-inner reveal">
+
+        <p class="section-kicker">05 / HOW I WORK</p>
+
+        <h2>Good work starts with<br /><em>understanding the why.</em></h2>
+
+        <div class="approach-steps">
+
+          <div>
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>Clarify the goal, audience, and what success should look like.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>Build</h3>
+            <p>Turn the brief into a considered, functional solution.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>Refine</h3>
+            <p>Review, test, and improve the details that matter.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-wrap" id="contact">
+
+      <div class="contact-copy reveal">
+
+        <p class="section-kicker">06 / LET'S CONNECT</p>
+
+        <h2>Have a good idea?<br /><em>Let's make it real.</em></h2>
+
+        <p>
+          Whether you need a new website, a campaign refresh, or help improving
+          your online presence, I'd love to hear what you're working on.
+        </p>
+
+        <a class="button button-dark"
+           href="mailto:Sharikarasheed114@gmail.com?subject=Portfolio%20enquiry">
+          Email me <span>↗</span>
+        </a>
+      </div>
+
+      <div class="contact-side reveal">
+
+        <span class="contact-mark">SARIKA THASNI<span></span></span>
+
+        <p>
+          Al Qusais, Dubai, UAE<br />
+          +971 54 796 5234<br />
+          Sharikarasheed114@gmail.com<br /><br />
+          Web development<br />
+          Digital marketing<br />
+          Thoughtful collaboration
+        </p>
+
+        <!-- BOTTOM CV BUTTON -->
+        <a class="button button-dark cv-bottom"
+           href="Sarika-Thasni-CV.pdf"
+           download>
+          Download my CV <span>↓</span>
+        </a>
+
+        <a href="#top" class="back-top">BACK TO TOP ↑</a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner">
+      <span>© <span id="year"></span> Sarika Thasni</span>
+      <span>Designed with intention.</span>
+      <a href="#top">Back to the beginning ↑</a>
+    </div>
+  </footer>
+
+</body>
 </html>
